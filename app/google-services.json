@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "96121448267",
+    "firebase_url": "https://mcmapp-3c8d3.firebaseio.com",
+    "project_id": "mcmapp-3c8d3",
+    "storage_bucket": "mcmapp-3c8d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96121448267:android:19511370a66bcc9529aace",
+        "android_client_info": {
+          "package_name": "com.platzi.conf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "96121448267-ag8l3s9flmpuss5s9dsh9t3nomnqf9sf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.platzi.conf",
+            "certificate_hash": "a02027a723e86803150f6f610a5dab9f91006cc2"
+          }
+        },
+        {
+          "client_id": "96121448267-kbgmd5i3q7bglubs5k35gklbdd33a16u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqZcPbr6K_TK4-BwD9b93Ia9pLZGDPJoc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "96121448267-kbgmd5i3q7bglubs5k35gklbdd33a16u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

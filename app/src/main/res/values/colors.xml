@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ANDROID -->
+    <color name="colorPrimaryDark">#283B4A</color>
+    <color name="colorPrimary">#2939A8</color>
+    <color name="colorAccent">#BE8F3D</color>
+
+    <!-- AMARILLOS -->
+    <color name="colorBesh">#D7D0B7</color>
+    <color name="colorBeshPalido">#E8DFC9</color>
+
+    <!-- NEUTROS -->
+    <color name="colorGris">#667A93</color>
+    <color name="colorNegro">#000000</color>
+    <color name="colorBlanco">#FFFFFF</color>
+
+    <!-- AZULES -->
+    <color name="colorAzulCielo">#03A9F4</color>
+</resources>
+
+<!--
+    biography string
+    category numero 1
+    image string
+    jobtitle string
+    name string
+    twitter string
+    workplace string
+-->

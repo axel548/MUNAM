@@ -10,4 +10,6 @@
     <dimen name="marginCards">15dp</dimen>
     <dimen name="itemScheduleTitulo">30sp</dimen>
     <dimen name="itemScheduleSubTitulo">20sp</dimen>
+    <dimen name="loginPadding">20dp</dimen>
+
 </resources>

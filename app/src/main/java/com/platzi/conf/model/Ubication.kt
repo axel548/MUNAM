@@ -8,4 +8,5 @@ class Ubication {
     val phone = "2472 0467"
     val webs = "https://www.museocarlosmerida.org/"
     val photo = ""
+    val facebook = "https://www.facebook.com/museocarlosmerida"
 }

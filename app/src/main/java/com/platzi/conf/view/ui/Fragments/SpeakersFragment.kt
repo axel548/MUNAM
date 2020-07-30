@@ -10,6 +10,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
 
 import com.platzi.conf.R
 import com.platzi.conf.model.Speaker
@@ -39,7 +40,7 @@ class SpeakersFragment : Fragment(), SpeakersListener {
         speakerAdapter = SpeakersAdapter(this)
 
         rvSpeakers.apply {
-            layoutManager = GridLayoutManager(context, 2)
+            layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
             adapter = speakerAdapter
         }
         observeViewModel()

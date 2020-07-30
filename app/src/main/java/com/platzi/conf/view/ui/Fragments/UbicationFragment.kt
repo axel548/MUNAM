@@ -47,7 +47,7 @@ class UbicationFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarkerClic
         markerOptions.position(centerMark)
         markerOptions.title("MUNAM")
 
-        val bitmapDraw = context?.applicationContext?.let { ContextCompat.getDrawable(it, R.drawable.mcmlogo) } as BitmapDrawable
+        val bitmapDraw = context?.applicationContext?.let { ContextCompat.getDrawable(it, R.drawable.ic_logomapa) } as BitmapDrawable
         val smallMarker = Bitmap.createScaledBitmap(bitmapDraw.bitmap, 150, 150, false)
 
         markerOptions.icon(BitmapDescriptorFactory.fromBitmap(smallMarker))

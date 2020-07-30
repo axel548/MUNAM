@@ -7,5 +7,8 @@
         La Sala de Exposición Permanente, la Sala Carlos Mérida, y la Sala de Exposiciones
         Temporales, que es un espacio activo, una ventana abierta a la contemporaneidad
         nacional e internacional y sus diversas manifestaciones artísticas.</string>
-
+    <string name="hint_email">Email:</string>
+    <string name="hint_password">Password:</string>
+    <string name="createAcoount_Button">Create Account</string>
+    <string name="signIn_Button">Sign in</string>
 </resources>

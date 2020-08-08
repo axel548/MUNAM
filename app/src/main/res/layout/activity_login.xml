@@ -1,47 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<com.google.android.material.appbar.AppBarLayout
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="@dimen/loginPadding">
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="130dp"
-        android:src="@drawable/mcmlogo" />
-
-    <EditText
-        android:id="@+id/edtEmail"
+    android:layout_height="wrap_content">
+    <Toolbar
+        android:id="@+id/tollbarMain"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/hint_email"
-        android:inputType="textEmailAddress"/>
+        android:layout_height="wrap_content">
+    </Toolbar>
+</com.google.android.material.appbar.AppBarLayout>
 
-    <EditText
-        android:id="@+id/edtPassword"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/hint_password"
-        android:inputType="textPassword"/>
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
-    <Button
-        android:id="@+id/btnCreateAccount"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/createAcoount_Button"/>
+        <ImageView
+            android:id="@+id/ivLogoMUNAM"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/garfield"
+            />
 
-    <Button
-        android:id="@+id/btnSignIn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/signIn_Button"/>
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/btnSigInGoogle"
+            android:layout_below="@+id/ivLogoMUNAM"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginHomeSubtitulo"
+            />
 
-    <com.google.android.material.button.MaterialButton
+        <Button
+            android:id="@+id/btnOlvidar"
+            android:layout_below="@+id/btnSigInGoogle"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot your Password?"
+            android:textColor="@color/colorVino"
+            android:textSize="@dimen/tamanioSubtitulo"
+            android:layout_margin="@dimen/marginHomeSubtitulo"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            />
 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/Widget.MaterialComponents.Button"
-        android:background="#6200EE"/>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-</LinearLayout>

@@ -6,13 +6,7 @@
         android:title="Inicio"
         android:icon="@drawable/ic_home"
         />
-    <!-- Cronograma -->
-    <item
-        android:id="@+id/navScheduleFragment"
-        android:title="Cronograma"
-        android:icon="@drawable/ic_schedule"
-        />
-    <!-- People -->
+    <!-- Pictures -->
     <item
         android:id="@+id/navSpeakersFragment"
         android:title="Pinturas"
@@ -23,5 +17,17 @@
         android:id="@+id/navMapFragment"
         android:title="Mapa"
         android:icon="@drawable/ic_map"
+        />
+    <!-- Hours -->
+    <item
+        android:id="@+id/navScheduleFragment"
+        android:title="Horarios"
+        android:icon="@drawable/ic_schedule"
+        />
+    <!-- User -->
+    <item
+        android:id="@+id/navUserFragment"
+        android:title="Usuario"
+        android:icon="@drawable/ic_person"
         />
 </menu>

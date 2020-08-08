@@ -49,27 +49,14 @@ import java.text.SimpleDateFormat
         toolbar.setTitleTextColor(Color.WHITE)
 
         tvDetailSpeakerName.text = speaker.name
-        tvDetailSpeakerWorkplace.text = speaker.workplace
-        tvDetailSpeakerJobtitle.text = speaker.jobtitle
+        tvDetailSpeakerJobtitle.text = speaker.fech_pintura
+        tvDetailSpeakerWorkplace.text = speaker.autor
+        tvDetailSpeakertwitter.text = speaker.fech_autor
         tvDetailSpeakerBiography.text = speaker.biography
         Glide.with(this)
             .load(speaker.image)
             .apply(RequestOptions.circleCropTransform())
             .into(ivDetailSpeakerImage)
-
-        ivDetailSpeakerTwitter.setOnClickListener {
-            var intent : Intent
-            try {
-                context?.packageManager?.getPackageInfo("com.twitter.android", 0)
-                intent = Intent(Intent.ACTION_VIEW, Uri.parse("twitter://user?screen_name=${speaker.twitter}"))
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-            } catch (e: Exception){
-                intent = Intent(
-                    Intent.ACTION_VIEW, Uri.parse("https://twitter.com/${speaker.twitter}")
-                )
-            }
-            startActivity(intent)
-        }
     }
 
     override fun onStart() {

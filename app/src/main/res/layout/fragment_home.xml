@@ -13,90 +13,128 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-                <!-- Card-Historia -->
-                <androidx.cardview.widget.CardView
+
+            <!--Museo Historia-->
+            <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardHistoria"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:cardCornerRadius="@dimen/cardCornerRadius"
-                    app:cardElevation="0dp"
-                    android:layout_margin="@dimen/marginCards">
+                    android:layout_margin="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="194dp"
+                            android:contentDescription="MUNAM"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/museofrente" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Historia"
+                                android:textSize="@dimen/tamanioTitulo"
+                                android:textAppearance="?attr/textAppearanceHeadline2"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:text="@string/infoMuseo"
+                                android:textSize="@dimen/tamanioSubtitulo"
+                                android:textAppearance="?attr/textAppearanceBody1"
+                                android:textColor="?android:attr/textColorSecondary"/>
+                    </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            <!--Museo Dentro-->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardMuseoDentro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="194dp"
+                        android:contentDescription="MUNAM"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/museo_vista_aerea" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:background="@drawable/shape_parrafo">
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="@dimen/altoImageViewHome"
-                            android:layout_marginTop="15dp"
-                            android:src="@drawable/museofrente"/>
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="@color/colorGris"/>
+                        android:padding="16dp">
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/infoMuseoTitulo"
-                            android:textStyle="bold"
+                            android:text="Museo"
                             android:textSize="@dimen/tamanioTitulo"
-                            android:textColor="@color/colorPrimaryDark"
-                            android:layout_marginRight="@dimen/marginHomeSubtitulo"
-                            android:layout_marginLeft="@dimen/marginHomeSubtitulo"
-                            android:layout_marginTop="@dimen/marginHomeSubtitulo"/>
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="@color/colorGris"
-                            android:layout_marginTop="10dp"/>
+                            android:textAppearance="?attr/textAppearanceHeadline2"/>
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/infoMuseo"
+                            android:layout_marginTop="16dp"
+                            android:text="@string/infoSalas"
                             android:textSize="@dimen/tamanioSubtitulo"
-                            android:textColor="@color/colorNegro"
-                            android:layout_margin="@dimen/marginHomeSubtitulo" />
+                            android:textAppearance="?attr/textAppearanceBody1"
+                            android:textColor="?android:attr/textColorSecondary"/>
                     </LinearLayout>
-                </androidx.cardview.widget.CardView>
-                <!-- Card-MuseoDentro -->
-                <androidx.cardview.widget.CardView
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <!--Museo Carlos Merida-->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardCarlosMerida"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="4dp"
-                app:cardElevation="0dp"
-                android:layout_margin="@dimen/marginCards">
+                android:layout_margin="8dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@drawable/shape_parrafo">
+                    android:orientation="vertical">
+
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/altoImageViewHome"
-                        android:layout_margin="@dimen/marginCards"
-                        android:src="@drawable/museodentro"/>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-                <!-- Card-MuseoCarlos -->
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:cardCornerRadius="4dp"
-                    app:cardElevation="0dp"
-                    android:layout_margin="@dimen/marginCards">
+                        android:layout_height="194dp"
+                        android:contentDescription="MUNAM"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/carlosmerida" />
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:background="@drawable/shape_parrafo">
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="@dimen/altoImageViewHome"
-                            android:layout_margin="@dimen/marginCards"
-                            android:src="@drawable/carlosmerida"/>
+                        android:padding="16dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/tamanioTitulo"
+                            android:text="Sala Carlos Mérida"
+                            android:textAppearance="?attr/textAppearanceHeadline2"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="@string/infoSalaCarlosMerida"
+                            android:textSize="@dimen/tamanioSubtitulo"
+                            android:textAppearance="?attr/textAppearanceBody1"
+                            android:textColor="?android:attr/textColorSecondary"/>
                     </LinearLayout>
-                </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
         </LinearLayout>
     </ScrollView>
 </FrameLayout>

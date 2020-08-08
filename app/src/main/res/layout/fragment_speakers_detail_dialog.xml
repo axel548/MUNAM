@@ -20,23 +20,21 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-            <!-- Card -->
-            <androidx.cardview.widget.CardView
+
+            <!-- Pinturas -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardHistoria"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="4dp"
-                app:cardElevation="0dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_marginBottom="15dp">
+                android:layout_margin="8dp"
+                android:background="@color/colorBeshPalido">
+
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/shape_parrafo"
-                    android:padding="10dp">
+                    android:layout_marginBottom="10dp">
+
                     <!-- Foto Speaker -->
                     <ImageView
                         android:id="@+id/ivDetailSpeakerImage"
@@ -45,65 +43,87 @@
                         android:src="@mipmap/ic_launcher"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="40dp"/>
-                    <!-- Speaker Name -->
-                    <TextView
-                        android:id="@+id/tvDetailSpeakerName"
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Speaker Name"
-                        android:layout_marginTop="10dp"
-                        android:textSize="30sp"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorNegro"
-                        android:gravity="center_horizontal"
-                        android:layout_centerInParent="true"
-                        android:layout_marginRight="15dp"
-                        android:layout_marginLeft="15dp"/>
-                    <!-- Job Title -->
-                    <TextView
-                        android:id="@+id/tvDetailSpeakerJobtitle"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="10dp"
+                        android:padding="16dp">
+                        <!-- Pintura -->
+                        <TextView
+                            android:id="@+id/tvDetailSpeakerName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Pintura"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold"
+                            android:textSize="25sp"
+                            android:textAppearance="?attr/textAppearanceHeadline2"
+                            android:textColor="@color/colorNegro"
+                            android:gravity="center_horizontal"
+                            android:layout_centerInParent="true"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginLeft="15dp"/>
+                        <!-- Características - Pintura -->
+                        <TextView
+                            android:id="@+id/tvDetailSpeakerJobtitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Fech_Pintura"
+                            android:gravity="center_horizontal"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorNegro"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginLeft="15dp"/>
+                        <!-- Autor -->
+                        <TextView
+                            android:id="@+id/tvDetailSpeakerWorkplace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Autor"
+                            android:textSize="@dimen/tamanioTitulo"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorNegro"
+                            android:gravity="center_horizontal"
+                            android:layout_centerInParent="true"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginLeft="15dp"/>
+                        <!-- Fecha - Autor  -->
+                        <TextView
+                            android:id="@+id/tvDetailSpeakertwitter"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Fech_pintura"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorNegro"
+                            android:gravity="center_horizontal"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginLeft="15dp"/>
+                        <!-- Description -->
+                        <TextView
+                            android:id="@+id/tvDetailSpeakerBiography"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Lorem ipsum"
+                            android:textSize="@dimen/tamanioSubtitulo"
+                            android:gravity="center_horizontal"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:textAppearance="?attr/textAppearanceBody1"
+                            android:textColor="?android:attr/textColorSecondary"/>
+                    </LinearLayout>
+
+                    <Button
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Job Title"
-                        android:gravity="center_horizontal"
-                        android:textSize="15sp"
-                        android:textColor="@color/colorNegro"
-                        android:layout_marginRight="15dp"
-                        android:layout_marginLeft="15dp"/>
-                    <!-- Workplace -->
-                    <TextView
-                        android:id="@+id/tvDetailSpeakerWorkplace"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Workplace"
-                        android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorNegro"
-                        android:gravity="center_horizontal"
-                        android:layout_centerInParent="true"
-                        android:layout_marginRight="15dp"
-                        android:layout_marginLeft="15dp"/>
-                    <!-- Icon Twitter -->
-                    <ImageView
-                        android:id="@+id/ivDetailSpeakerTwitter"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:src="@drawable/ic_icons_twitter"
-                        android:layout_marginTop="10dp"
-                        android:layout_gravity="center_horizontal"/>
-                    <!-- Description -->
-                    <TextView
-                        android:id="@+id/tvDetailSpeakerBiography"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Lorem ipsum"
-                        android:textSize="15sp"
-                        android:textColor="@color/colorNegro"
-                        android:gravity="left"
-                        android:layout_marginRight="15dp"
-                        android:layout_marginLeft="15dp"/>
+                        android:background="@color/Prima"
+                        android:textColor="@color/colorBlanco"
+                        android:text="Jugar!"
+                        style="?attr/materialButtonStyle"/>
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </com.google.android.material.card.MaterialCardView>
+
         </ScrollView>
     </FrameLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

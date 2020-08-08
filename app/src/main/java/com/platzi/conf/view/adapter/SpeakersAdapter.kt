@@ -23,7 +23,7 @@ class SpeakersAdapter (val speakerListener: SpeakersListener) : RecyclerView.Ada
         val speaker = listSpeakers[position]
 
         holder.tvspeakerName.text = speaker.name
-        holder.tvSpeakerWork.text = speaker.workplace
+        holder.tvSpeakerWork.text = speaker.autor
 
         Glide.with(holder.itemView.context)
             .load(speaker.image)

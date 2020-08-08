@@ -1,14 +1,30 @@
 <resources>
     <string name="app_name">MUNAM</string>
     <string name="infoMuseoTitulo">Historia del Museo:</string>
+
     <string name="infoMuseo">El edificio que alberga el Museo Nacional de Arte Moderno
         de Guatemala fue construido por el Arquitecto Manuel Roberto Moreno Barahona e
         inaugurado en 1939, cuenta con tres espacios dedicados a las Artes Visuales:
         La Sala de Exposición Permanente, la Sala Carlos Mérida, y la Sala de Exposiciones
         Temporales, que es un espacio activo, una ventana abierta a la contemporaneidad
         nacional e internacional y sus diversas manifestaciones artísticas.</string>
+
+    <string name="infoSalaCarlosMerida">La Sala de Exposición Permanente, que resguarda
+        como patrimonio nacional, una cronología de cien años de obras de arte
+        guatemaltecas; la Sala Carlos Mérida, dedicada exclusivamente a la obra del
+        maestro y la Sala de Exposiciones Temporales, que es un espacio activo, una
+        ventana abierta a la contemporaneidad nacional e internacional y sus diversas
+        manifestaciones artísticas.</string>
+
+    <string name="infoSalas">
+        Hoy el Museo permanece como la joya central del arte moderno de Guatemala.
+        colección ejemplifica el amplio abanico de expresión de la modernidad en el país,
+        en el período comprendido desde el año 1900 hasta el 2000.</string>
+
     <string name="hint_email">Email:</string>
     <string name="hint_password">Password:</string>
     <string name="createAcoount_Button">Create Account</string>
     <string name="signIn_Button">Sign in</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

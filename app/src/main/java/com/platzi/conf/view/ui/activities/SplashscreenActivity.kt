@@ -17,7 +17,7 @@ class SplashscreenActivity : AppCompatActivity() {
         val animacion = AnimationUtils.loadAnimation(this, R.anim.animacion)
         ivLogoPlatziConf.startAnimation(animacion)
 
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, LoginActivity::class.java)
 
         animacion.setAnimationListener(object : Animation.AnimationListener{
             override fun onAnimationRepeat(animation: Animation?) {

@@ -16,6 +16,13 @@
 
     <!-- AZULES -->
     <color name="colorAzulCielo">#03A9F4</color>
+
+    <!-- ROJOS -->
+    <color name="colorVino">#a31915</color>
+    <color name="colorError">#B00020</color>
+
+    <!-- Primerios -->
+    <color name="Prima">#6200EE</color>
 </resources>
 
 <!--

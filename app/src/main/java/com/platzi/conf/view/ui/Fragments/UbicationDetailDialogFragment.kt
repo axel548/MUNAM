@@ -59,9 +59,8 @@ class UbicationDetailDialogFragment : DialogFragment() {
             startActivity(intent)
         }
         llFacebook.setOnClickListener {
-            val intent = Intent(Intent.ACTION_DIAL).apply {
-                data = Uri.parse(ubication.facebook)
-            }
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = Uri.parse(ubication.facebook)
             startActivity(intent)
         }
     }

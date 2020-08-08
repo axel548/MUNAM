@@ -23,7 +23,7 @@ class ScheduleAdapter(val scheduleListener: ScheduleListener) : RecyclerView.Ada
 
     //Los datos que se cargarán
     override fun onBindViewHolder(holder: ScheduleAdapter.ViewHolder, position: Int) {
-        val conference = listConference[position] as Conference
+        val conference:Conference =  listConference[position]
 
         holder.tvConferenceName.text = conference.title
         holder.tvConferenceSpeaker.text = conference.speaker

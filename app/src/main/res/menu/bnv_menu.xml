@@ -4,25 +4,26 @@
     <item
         android:id="@+id/navHomFragment"
         android:title="Inicio"
-        android:icon="@drawable/ic_home"
+        android:icon="@drawable/home"
         />
     <!-- Pictures -->
     <item
         android:id="@+id/navSpeakersFragment"
         android:title="Pinturas"
-        android:icon="@drawable/ic_image"
+        android:icon="@drawable/pinturas"
+
         />
     <!-- Map -->
     <item
         android:id="@+id/navMapFragment"
-        android:title="Mapa"
-        android:icon="@drawable/ic_map"
+        android:title="Ubicación"
+        android:icon="@drawable/maps"
         />
     <!-- Hours -->
     <item
         android:id="@+id/navScheduleFragment"
         android:title="Horarios"
-        android:icon="@drawable/ic_schedule"
+        android:icon="@drawable/avisos"
         />
     <!-- User -->
     <item

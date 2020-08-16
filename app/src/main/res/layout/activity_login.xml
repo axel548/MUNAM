@@ -28,12 +28,32 @@ xmlns:app="http://schemas.android.com/apk/res-auto">
             android:layout_width="wrap_content"
             android:layout_height="130dp"
             android:layout_margin="10dp"
-            android:src="@drawable/garfield"
+            android:src="@drawable/ic_logo"
+            />
+        <TextView
+            android:id="@+id/tvInicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_iniciosesion"
+            android:layout_below="@id/ivLogoMUNAM"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="center"
             />
 
         <com.google.android.gms.common.SignInButton
             android:id="@+id/btnSigInGoogle"
-            android:layout_below="@+id/ivLogoMUNAM"
+            android:layout_below="@+id/tvInicio"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginHomeSubtitulo"
+            />
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/btnSigInFacebook"
+            android:layout_below="@+id/btnSigInGoogle"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_width="match_parent"
@@ -43,7 +63,7 @@ xmlns:app="http://schemas.android.com/apk/res-auto">
 
         <Button
             android:id="@+id/btnOlvidar"
-            android:layout_below="@+id/btnSigInGoogle"
+            android:layout_below="@+id/btnSigInFacebook"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_width="wrap_content"

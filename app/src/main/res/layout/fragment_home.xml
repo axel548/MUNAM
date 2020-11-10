@@ -13,17 +13,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-
             <!--Museo Historia-->
             <com.google.android.material.card.MaterialCardView
                     android:id="@+id/cardHistoria"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp">
+                    style="@style/CardsView">
                     <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        style="@style/CodeLinearLayout">
 
                         <ImageView
                             android:layout_width="match_parent"
@@ -33,37 +28,24 @@
                             android:src="@drawable/museofrente" />
 
                         <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
+                            style="@style/CodeLinearLayout"
                             android:padding="16dp">
                             <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Historia"
-                                android:textSize="@dimen/tamanioTitulo"
-                                android:textAppearance="?attr/textAppearanceHeadline2"/>
+                                style="@style/cardstitle"
+                                android:text="Historia"/>
                             <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                style="@style/cardssubtitle"
                                 android:layout_marginTop="16dp"
-                                android:text="@string/infoMuseo"
-                                android:textSize="@dimen/tamanioSubtitulo"
-                                android:textAppearance="?attr/textAppearanceBody1"
-                                android:textColor="?android:attr/textColorSecondary"/>
+                                android:text="@string/infoMuseo"/>
                     </LinearLayout>
                     </LinearLayout>
-                </com.google.android.material.card.MaterialCardView>
+            </com.google.android.material.card.MaterialCardView>
             <!--Museo Dentro-->
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardMuseoDentro"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp">
+                style="@style/CardsView">
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    style="@style/CodeLinearLayout">
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -73,37 +55,24 @@
                         android:src="@drawable/museo_vista_aerea" />
 
                     <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
+                        style="@style/CodeLinearLayout"
                         android:padding="16dp">
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Museo"
-                            android:textSize="@dimen/tamanioTitulo"
-                            android:textAppearance="?attr/textAppearanceHeadline2"/>
+                            style="@style/cardstitle"
+                            android:text="Museo"/>
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            style="@style/cardssubtitle"
                             android:layout_marginTop="16dp"
-                            android:text="@string/infoSalas"
-                            android:textSize="@dimen/tamanioSubtitulo"
-                            android:textAppearance="?attr/textAppearanceBody1"
-                            android:textColor="?android:attr/textColorSecondary"/>
+                            android:text="@string/infoSalas"/>
                     </LinearLayout>
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
             <!--Museo Carlos Merida-->
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardCarlosMerida"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp">
+                style="@style/CardsView">
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    style="@style/CodeLinearLayout">
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -113,28 +82,18 @@
                         android:src="@drawable/carlosmerida" />
 
                     <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
+                        style="@style/CodeLinearLayout"
                         android:padding="16dp">
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textSize="@dimen/tamanioTitulo"
-                            android:text="Sala Carlos Mérida"
-                            android:textAppearance="?attr/textAppearanceHeadline2"/>
+                            style="@style/cardstitle"
+                            android:text="Sala Carlos Mérida"/>
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            style="@style/cardssubtitle"
                             android:layout_marginTop="16dp"
-                            android:text="@string/infoSalaCarlosMerida"
-                            android:textSize="@dimen/tamanioSubtitulo"
-                            android:textAppearance="?attr/textAppearanceBody1"
-                            android:textColor="?android:attr/textColorSecondary"/>
+                            android:text="@string/infoSalaCarlosMerida" />
                     </LinearLayout>
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
-
         </LinearLayout>
     </ScrollView>
 </FrameLayout>

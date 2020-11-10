@@ -15,11 +15,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "96121448267-ag8l3s9flmpuss5s9dsh9t3nomnqf9sf.apps.googleusercontent.com",
+          "client_id": "96121448267-8j4sgtt30h758h04l6jjr0tpovcdlhpa.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.platzi.conf",
-            "certificate_hash": "a02027a723e86803150f6f610a5dab9f91006cc2"
+            "certificate_hash": "3eae7bcbe3d9843faee1275c7351518e0fd88094"
           }
         },
         {

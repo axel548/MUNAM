@@ -22,21 +22,87 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:background="@drawable/shape_parrafo">
+                android:orientation="vertical">
                 <!-- Image Lugar -->
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="230dp"
-                    android:src="@drawable/carlosmerida"
+                    android:src="@drawable/sala_carlos_merida"
                     android:scaleType="centerCrop"/>
-                <!-- Card -->
-                <androidx.cardview.widget.CardView
+                <!-- Horarios-->
+                <com.google.android.material.card.MaterialCardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:cardCornerRadius="4dp"
-                    app:cardElevation="1dp"
-                    android:layout_margin="@dimen/marginCards">
+                    android:layout_margin="20dp"
+                    android:background="@color/colorBeshPalido">
+                    <LinearLayout
+                        style="@style/CodeLinearLayout"
+                        android:padding="16dp"
+                        android:background="@drawable/shape_parrafo">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Horarios de Atención"
+                            android:textSize="30sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorNegro"
+                            android:gravity="center_horizontal"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="5dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="10dp">
+                            <TextView
+                                style="@style/cardstitle"
+                                android:text="• Lunes"
+                                android:paddingRight="10dp"/>
+                            <TextView
+                                style="@style/cardssubtitle"
+                                android:text="@string/hrs_lunes"
+                                android:layout_marginLeft="15dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="10dp">
+                            <TextView
+                                style="@style/cardstitle"
+                                android:text="• Martes a Viernes"
+                                android:paddingRight="10dp"/>
+                            <TextView
+                                style="@style/cardssubtitle"
+                                android:text="@string/hrs_Entre"
+                                android:layout_marginLeft="15dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="10dp">
+                            <TextView
+                                style="@style/cardstitle"
+                                android:text="• Sábado y Domingo"
+                                android:paddingRight="10dp"/>
+                            <TextView
+                                style="@style/cardssubtitle"
+                                android:text="@string/hrs_Fin"
+                                android:layout_marginLeft="15dp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <!-- Card -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@color/colorBeshPalido">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -47,17 +113,13 @@
                             android:id="@+id/tvDetailNombreLugar"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Lugar PlatziConf"
+                            android:text="Localización"
                             android:textSize="30sp"
                             android:textStyle="bold"
                             android:textColor="@color/colorNegro"
                             android:gravity="center_horizontal"
                             android:layout_centerInParent="true"
                             android:layout_margin="5dp"/>
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="@color/colorGris"/>
                         <!-- Direccion -->
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -78,10 +140,6 @@
                                 android:gravity="left"
                                 android:layout_margin="5dp"/>
                         </LinearLayout>
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="@color/colorGris"/>
                         <!-- Telefono Lugar -->
                         <LinearLayout
                             android:id="@+id/llTelefonoLugar"
@@ -95,7 +153,24 @@
                                 android:src="@drawable/ic_phone"/>
                             <TextView
                                 android:id="@+id/tvUbicationTelefono"
-                                android:layout_width="match_parent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Telefono lugar"
+                                android:textSize="15sp"
+                                android:textColor="@color/colorNegro"
+                                android:gravity="left"
+                                android:layout_margin="5dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" / "
+                                android:textSize="15sp"
+                                android:textColor="@color/colorNegro"
+                                android:gravity="left"
+                                android:layout_margin="5dp"/>
+                            <TextView
+                                android:id="@+id/tvUbicationTelefono2"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Telefono lugar"
                                 android:textSize="15sp"
@@ -103,10 +178,6 @@
                                 android:gravity="left"
                                 android:layout_margin="5dp"/>
                         </LinearLayout>
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="@color/colorGris"/>
                         <!-- Sitio Web -->
                         <LinearLayout
                             android:id="@+id/llSitioWeb"
@@ -128,10 +199,6 @@
                                 android:gravity="left"
                                 android:layout_margin="5dp"/>
                         </LinearLayout>
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="@color/colorGris"/>
                         <!-- Facebook -->
                         <LinearLayout
                             android:id="@+id/llFacebook"
@@ -153,13 +220,11 @@
                                 android:gravity="left"
                                 android:layout_margin="5dp"/>
                         </LinearLayout>
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="@color/colorGris"/>
+
                     </LinearLayout>
-                </androidx.cardview.widget.CardView>
+                </com.google.android.material.card.MaterialCardView>
             </LinearLayout>
         </ScrollView>
     </FrameLayout>
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -43,10 +43,10 @@
                             android:textSize="@dimen/tamanioTitulo"
                             android:textAppearance="?attr/textAppearanceHeadline2"/>
                         <TextView
-                            android:id="@+id/tvProvider"
+                            android:id="@+id/tvProveedor"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Provider"
+                            android:text="Proveedor"
                             android:textSize="@dimen/tamanioTitulo"
                             android:textAppearance="?attr/textAppearanceHeadline2"/>
                         <Button

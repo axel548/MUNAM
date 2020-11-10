@@ -42,9 +42,9 @@ class UbicationDetailDialogFragment : DialogFragment() {
 
         toolbarUbication.title = ubication.name
 
-        tvDetailNombreLugar.text = ubication.name
         tvUbicationDireccion.text = ubication.address
         tvUbicationTelefono.text = ubication.phone
+        tvUbicationTelefono2.text = ubication.phone2
         tvUbicationWebsite.text = ubication.webs
 
         llTelefonoLugar.setOnClickListener {

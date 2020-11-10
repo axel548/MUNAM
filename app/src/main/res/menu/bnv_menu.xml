@@ -19,16 +19,4 @@
         android:title="Ubicación"
         android:icon="@drawable/maps"
         />
-    <!-- Hours -->
-    <item
-        android:id="@+id/navScheduleFragment"
-        android:title="Horarios"
-        android:icon="@drawable/avisos"
-        />
-    <!-- User -->
-    <item
-        android:id="@+id/navUserFragment"
-        android:title="Usuario"
-        android:icon="@drawable/ic_person"
-        />
 </menu>

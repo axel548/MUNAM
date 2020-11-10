@@ -27,4 +27,53 @@
         <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
     </style>
 
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--Style of text for the pictures-fragment-detail-dialog-->
+    <style name="CodeFont" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorNegro</item>
+        <item name="android:textSize">@dimen/tamanioSubtitulo</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <!--Style for the Linear Layout of pictures-fragment-detail-dialog-->
+    <style name="CodeLinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!--Styles for the cards of the fragment_home-->
+    <style name="CardsView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <style name="cardstitle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/tamanioTitulo</item>
+        <item name="android:textAppearance">?attr/textAppearanceHeadline2</item>
+    </style>
+
+     <style name="cardssubtitle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/tamanioSubtitulo</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
 </resources>

@@ -3,12 +3,18 @@ package com.platzi.conf.view.ui.Fragments
 import android.content.Intent
 import android.graphics.Color
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
+import android.text.Html
+import android.text.Spanned
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.annotation.RequiresApi
 import androidx.core.content.ContextCompat
+import androidx.core.text.HtmlCompat.FROM_HTML_MODE_LEGACY
+import androidx.core.text.HtmlCompat.fromHtml
 import androidx.fragment.app.DialogFragment
 import com.bumptech.glide.Glide
 import com.bumptech.glide.RequestBuilder
@@ -48,15 +54,15 @@ import java.text.SimpleDateFormat
         toolbar.title = speaker.name
         toolbar.setTitleTextColor(Color.WHITE)
 
-        tvDetailSpeakerName.text = speaker.name
-        tvDetailSpeakerJobtitle.text = speaker.fech_pintura
-        tvDetailSpeakerWorkplace.text = speaker.autor
-        tvDetailSpeakertwitter.text = speaker.fech_autor
-        tvDetailSpeakerBiography.text = speaker.biography
+        tvDetailPictureName.text = speaker.name
+        tvDetailPictureDate.text = "Detalles: " + speaker.fech_pintura
+        tvDetailAutorName.text = "Autor: " + speaker.autor
+        tvDetailAutorDate.text = speaker.fech_autor
+        tvDetailPictureBiography.text = "Biografía: " + speaker.biography
+
         Glide.with(this)
             .load(speaker.image)
-            .apply(RequestOptions.circleCropTransform())
-            .into(ivDetailSpeakerImage)
+            .into(ivDetailPictureImage)
     }
 
     override fun onStart() {

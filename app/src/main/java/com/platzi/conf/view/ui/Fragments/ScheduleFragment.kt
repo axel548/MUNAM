@@ -53,7 +53,7 @@ class ScheduleFragment : Fragment(), ScheduleListener {
         })
     }
     override fun onConferenceClicked(conference: Conference, position: Int) {
-        val bundle = bundleOf("conference" to conference)
-        findNavController().navigate(R.id.scheduleDetailFragmentDialog, bundle)
+        //val bundle = bundleOf("conference" to conference)
+       // findNavController().navigate(R.id.scheduleDetailFragmentDialog, bundle)
     }
 }

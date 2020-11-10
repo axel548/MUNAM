@@ -26,104 +26,70 @@
                 android:id="@+id/cardHistoria"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:background="@color/colorBeshPalido">
+                android:background="@color/colorBeshPalido"
+                android:layout_margin="8dp">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginBottom="10dp">
-
+                    style="@style/CodeLinearLayout">
                     <!-- Foto Speaker -->
                     <ImageView
-                        android:id="@+id/ivDetailSpeakerImage"
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
-                        android:src="@mipmap/ic_launcher"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="40dp"/>
-
-                    <LinearLayout
+                        android:id="@+id/ivDetailPictureImage"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginBottom="10dp"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_gravity="center_horizontal" />
+                <LinearLayout
+                    style="@style/CodeLinearLayout">
+                    <!-- Pintura -->
+                    <TextView
+                        android:id="@+id/tvDetailPictureName"
+                        style="@style/CodeFont"
+                        android:text="Pintura"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:textAppearance="?attr/textAppearanceHeadline2"
+                        android:layout_centerInParent="true" />
+                    <!-- Características - Pintura -->
+                    <TextView
+                        android:id="@+id/tvDetailPictureDate"
+                        style="@style/CodeFont"
+                        android:text="Fech_Pintura"/>
+                </LinearLayout>
+                    <LinearLayout
+                        style="@style/CodeLinearLayout"
                         android:padding="16dp">
-                        <!-- Pintura -->
-                        <TextView
-                            android:id="@+id/tvDetailSpeakerName"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Pintura"
-                            android:layout_marginTop="10dp"
-                            android:textStyle="bold"
-                            android:textSize="25sp"
-                            android:textAppearance="?attr/textAppearanceHeadline2"
-                            android:textColor="@color/colorNegro"
-                            android:gravity="center_horizontal"
-                            android:layout_centerInParent="true"
-                            android:layout_marginRight="15dp"
-                            android:layout_marginLeft="15dp"/>
-                        <!-- Características - Pintura -->
-                        <TextView
-                            android:id="@+id/tvDetailSpeakerJobtitle"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Fech_Pintura"
-                            android:gravity="center_horizontal"
-                            android:textSize="15sp"
-                            android:textColor="@color/colorNegro"
-                            android:layout_marginRight="15dp"
-                            android:layout_marginLeft="15dp"/>
+
                         <!-- Autor -->
                         <TextView
-                            android:id="@+id/tvDetailSpeakerWorkplace"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:id="@+id/tvDetailAutorName"
+                            style="@style/CodeFont"
                             android:text="Autor"
                             android:textSize="@dimen/tamanioTitulo"
                             android:textStyle="bold"
-                            android:textColor="@color/colorNegro"
-                            android:gravity="center_horizontal"
-                            android:layout_centerInParent="true"
-                            android:layout_marginRight="15dp"
-                            android:layout_marginLeft="15dp"/>
+                            android:layout_centerInParent="true" />
                         <!-- Fecha - Autor  -->
                         <TextView
-                            android:id="@+id/tvDetailSpeakertwitter"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Fech_pintura"
-                            android:textSize="15sp"
-                            android:textColor="@color/colorNegro"
-                            android:gravity="center_horizontal"
-                            android:layout_marginRight="15dp"
-                            android:layout_marginLeft="15dp"/>
+                            android:id="@+id/tvDetailAutorDate"
+                            style="@style/CodeFont"
+                            android:text="Fech_pintura"/>
                         <!-- Description -->
-                        <TextView
-                            android:id="@+id/tvDetailSpeakerBiography"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Lorem ipsum"
-                            android:textSize="@dimen/tamanioSubtitulo"
-                            android:gravity="center_horizontal"
-                            android:layout_marginRight="15dp"
-                            android:layout_marginLeft="15dp"
-                            android:textAppearance="?attr/textAppearanceBody1"
-                            android:textColor="?android:attr/textColorSecondary"/>
-                    </LinearLayout>
 
-                    <Button
+                        <com.codesgood.views.JustifiedTextView
+                            android:id="@+id/tvDetailPictureBiography"
+                            style="@style/CodeFont"
+                            android:textAppearance="?attr/textAppearanceBody1"
+                            android:textColor="?android:attr/textColorSecondary" />
+                    </LinearLayout>
+                    <!--<Button
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/Prima"
                         android:textColor="@color/colorBlanco"
                         android:text="Jugar!"
-                        style="?attr/materialButtonStyle"/>
+                        style="?attr/materialButtonStyle"/>-->
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
-
         </ScrollView>
     </FrameLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

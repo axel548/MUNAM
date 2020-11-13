@@ -45,4 +45,7 @@
     <string name="hrs_lunes">Cerrado al público</string>
     <string name="hrs_Entre">De 9:00hrs a 16:00hrs.</string>
     <string name="hrs_Fin">De 9:00hrs a 12:00hrs y de 13:30hrs a 16:00hrs.</string>
+
+    <string name="invalid_move">Invalid move</string>
+    <string name="winner">YOU WIN!</string>
 </resources>

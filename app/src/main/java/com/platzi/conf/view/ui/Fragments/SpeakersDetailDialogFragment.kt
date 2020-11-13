@@ -1,6 +1,5 @@
 package com.platzi.conf.view.ui.Fragments
 
-import android.content.Intent
 import android.graphics.Color
 import android.net.Uri
 import android.os.Build
@@ -16,6 +15,13 @@ import androidx.core.content.ContextCompat
 import androidx.core.text.HtmlCompat.FROM_HTML_MODE_LEGACY
 import androidx.core.text.HtmlCompat.fromHtml
 import androidx.fragment.app.DialogFragment
+import androidx.fragment.app.FragmentActivity
+import androidx.fragment.app.FragmentTransaction
+import androidx.navigation.Navigation
+import androidx.navigation.Navigation.findNavController
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment.findNavController
+import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
 import com.bumptech.glide.RequestBuilder
 import com.bumptech.glide.request.RequestOptions
@@ -23,15 +29,17 @@ import com.bumptech.glide.request.RequestOptions
 import com.platzi.conf.R
 import com.platzi.conf.model.Conference
 import com.platzi.conf.model.Speaker
+import com.platzi.conf.view.ui.game.PuzzleFragment
 import kotlinx.android.synthetic.main.fragment_schedule_detail_dialog.*
 import kotlinx.android.synthetic.main.fragment_speakers_detail_dialog.*
 import java.lang.Exception
 import java.text.SimpleDateFormat
+import android.content.Intent as Intent1
 
 /**
  * A simple [Fragment] subclass.
  */
-    class SpeakersDetailDialogFragment : DialogFragment() {
+    class  SpeakersDetailDialogFragment : DialogFragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
@@ -41,6 +49,7 @@ import java.text.SimpleDateFormat
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setStyle(STYLE_NORMAL, R.style.FullScreenDialogStyle)
+        //findNavController().navigate(R.id.puzzleFragment)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -63,6 +72,10 @@ import java.text.SimpleDateFormat
         Glide.with(this)
             .load(speaker.image)
             .into(ivDetailPictureImage)
+
+        btnJugar.setOnClickListener{
+            it.findNavController().navigate(R.id.puzzleFragment)
+        }
     }
 
     override fun onStart() {

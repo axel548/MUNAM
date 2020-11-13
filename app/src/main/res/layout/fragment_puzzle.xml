@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout
+        android:id="@+id/fragmentDetailDialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <com.platzi.conf.view.ui.game.GestureDetectGridView
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/gesture_detect_grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".view.ui.game.PuzzleFragment"/>
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

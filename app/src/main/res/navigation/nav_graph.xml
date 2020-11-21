@@ -43,8 +43,8 @@
         android:label="SpeakerDetailFragmentDialog"
         tools:layout="@layout/fragment_speakers_detail_dialog">
         <action
-            android:id="@+id/action_speakersDetailFragmentDialog_to_puzzleFragment"
-            app:destination="@id/puzzleFragment" />
+            android:id="@+id/action_speakersDetailFragmentDialog_to_gameFragment"
+            app:destination="@id/gameFragment" />
     </dialog>
 
     <dialog
@@ -52,10 +52,11 @@
         android:name="com.platzi.conf.view.ui.Fragments.UbicationDetailDialogFragment"
         android:label="UbicationDetailFragmentDialog"
         tools:layout="@layout/fragment_ubication_detail_dialog"/>
-    <activity
-        android:id="@+id/puzzleFragment"
-        android:name="com.platzi.conf.view.ui.game.PuzzleFragment"
-        android:label="fragment_puzzle"
-        tools:layout="@layout/fragment_puzzle" />
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.platzi.conf.view.ui.Fragments.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" />
+
 
 </navigation>

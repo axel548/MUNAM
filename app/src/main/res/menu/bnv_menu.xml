@@ -11,12 +11,17 @@
         android:id="@+id/navSpeakersFragment"
         android:title="Pinturas"
         android:icon="@drawable/pinturas"
-
         />
     <!-- Map -->
     <item
         android:id="@+id/navMapFragment"
         android:title="Ubicación"
         android:icon="@drawable/maps"
+        />
+    <!-- Map -->
+    <item
+        android:id="@+id/puzzleFragment"
+        android:title="Juego"
+        android:icon="@drawable/avisos"
         />
 </menu>

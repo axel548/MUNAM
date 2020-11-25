@@ -1,8 +1,6 @@
  package com.platzi.conf.view.ui.Fragments
 
 import android.content.Context
-import android.graphics.drawable.Drawable
-import android.media.Image
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -13,12 +11,9 @@ import android.widget.Toast
 import androidx.annotation.StringRes
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.DialogFragment
-import androidx.navigation.fragment.findNavController
-import com.bumptech.glide.Glide
 import com.platzi.conf.R
 import com.platzi.conf.model.Speaker
 import kotlinx.android.synthetic.main.fragment_game.*
-import kotlinx.android.synthetic.main.fragment_speakers_detail_dialog.*
 import java.util.*
 
 
@@ -310,7 +305,7 @@ class GameFragment : DialogFragment() {
                     2 -> tileImage.setBackgroundResource(R.drawable.f1c3_12)
                     3 -> tileImage.setBackgroundResource(R.drawable.f2c1_12)
                     4 -> tileImage.setBackgroundResource(R.drawable.f2c2_12)
-                    5 -> tileImage.setBackgroundResource(R.drawable.f2c3_12)
+                    5 -> tileImage.setBackgroundResource(R.drawable.f2c3_12_1)
                     6 -> tileImage.setBackgroundResource(R.drawable.f3c1_12)
                     7 -> tileImage.setBackgroundResource(R.drawable.f3c2_12)
                     8 -> tileImage.setBackgroundResource(R.drawable.f3c3_12)

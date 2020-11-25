@@ -52,11 +52,10 @@
         android:name="com.platzi.conf.view.ui.Fragments.UbicationDetailDialogFragment"
         android:label="UbicationDetailFragmentDialog"
         tools:layout="@layout/fragment_ubication_detail_dialog"/>
-    <fragment
+    <dialog
         android:id="@+id/gameFragment"
         android:name="com.platzi.conf.view.ui.Fragments.GameFragment"
         android:label="fragment_game"
-        tools:layout="@layout/fragment_game" />
-
+        tools:layout="@layout/fragment_game"/>
 
 </navigation>

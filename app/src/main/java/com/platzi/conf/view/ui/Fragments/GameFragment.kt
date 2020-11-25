@@ -13,6 +13,7 @@ import android.widget.Toast
 import androidx.annotation.StringRes
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.DialogFragment
+import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
 import com.platzi.conf.R
 import com.platzi.conf.model.Speaker
@@ -68,6 +69,11 @@ class GameFragment : DialogFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        toolbarGame.navigationIcon = ContextCompat.getDrawable(view.context, R.drawable.ic_close)
+        toolbarGame.setNavigationOnClickListener {
+            dismiss()
+        }
+
         iniciali()
     }
 

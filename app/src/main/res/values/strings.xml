@@ -27,8 +27,10 @@
     <string name="signIn_Button">Sign in</string>
 
     <string name="label_iniciosesion">Iniciar sesión con:</string>
+
     <string name="facebook_app_id">359970405007385</string>
     <string name="fb_login_protocol_scheme">fb359970405007385</string>
+
     <string name="prefs_file">com.example.loginfacebook.PREFERENCE_FILE_KEY</string>
     <string name="title_activity_menu">MenuActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>

@@ -4,48 +4,53 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Toolbar
+            android:id="@+id/toolbarGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
     <FrameLayout
         android:id="@+id/fragmentGame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
-
-    <RelativeLayout
+            <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/tvtCategory"
+        <LinearLayout
+            android:id="@+id/gameLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:textAlignment="center"
-            android:textSize="@dimen/tamanioTitulo"
-            android:layout_marginBottom="20dp"
-            android:text="Category"/>
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvtCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textAlignment="center"
+                android:textSize="40dp"
+                android:layout_marginBottom="20dp"
+                android:text="Juego"/>
+
+            <!--<Button
+                android:id="@+id/btnReplay"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_replay"/>-->
+        </LinearLayout>
 
 
         <com.platzi.conf.view.ui.Fragments.GestureDetectGridView
             android:id="@+id/gesture_detect_grid_view"
-            android:layout_below="@id/tvtCategory"
-            android:layout_width="match_parent"
+            android:layout_below="@id/gameLayout"
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-
-        <Button
-            android:id="@id/btnReinicia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/gesture_detect_grid_view"
-            android:layout_marginTop="20dp"
-            android:text="Reiniciar"/>
-
-        <ImageView
-            android:id="@+id/ivRow1Column1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/btnReinicia"/>
-
     </RelativeLayout>
-
-</FrameLayout>
+    </FrameLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

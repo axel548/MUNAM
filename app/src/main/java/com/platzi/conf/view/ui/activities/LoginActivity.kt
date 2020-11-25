@@ -15,6 +15,7 @@ import androidx.appcompat.app.AlertDialog
 import com.facebook.*
 import com.facebook.login.LoginManager
 import com.facebook.login.LoginResult
+import com.facebook.login.widget.LoginButton
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
@@ -45,7 +46,6 @@ class LoginActivity : AppCompatActivity() {
         //setup
         setup()
         session()
-
     }
     override fun onStart() {
         super.onStart()
@@ -80,7 +80,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         btnSigInFacebook.setOnClickListener {
-            LoginManager.getInstance().logInWithReadPermissions(this, listOf("email"))
+            LoginManager.getInstance().logInWithReadPermissions(this, listOf("email", "public_profile"))
 
             LoginManager.getInstance().registerCallback(callbackManager,
                 object : FacebookCallback<LoginResult>{
@@ -91,6 +91,7 @@ class LoginActivity : AppCompatActivity() {
                             FirebaseAuth.getInstance().signInWithCredential(credential).addOnCompleteListener {
                                 if(it.isSuccessful){
                                     //showHome(it.result?.user?.email?:"", ProviderType.FACEBOOK)
+                                    showHome()
                                 }else{
                                     showAlert()
                                 }

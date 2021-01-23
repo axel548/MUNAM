@@ -39,7 +39,7 @@ class LoginActivity : AppCompatActivity() {
     private val GOOGLE_SIGN_IN = 100
     private val callbackManager = CallbackManager.Factory.create()
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) { 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
